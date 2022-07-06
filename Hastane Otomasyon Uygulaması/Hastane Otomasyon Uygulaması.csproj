@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{857A5306-5AAF-4B9E-9161-B285BDC7EC5E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hastane_Otomasyon_Uygulaması</RootNamespace>
+    <AssemblyName>Hastane Otomasyon Uygulaması</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DoktorBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoktorBilgileri.Designer.cs">
+      <DependentUpon>DoktorBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ds_HastaneOtomasyonu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_HastaneOtomasyonu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="anaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anaSayfa.Designer.cs">
+      <DependentUpon>anaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaDüzenlemeVeArama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaDüzenlemeVeArama.Designer.cs">
+      <DependentUpon>HastaDüzenlemeVeArama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaKayitFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaKayitFormu.Designer.cs">
+      <DependentUpon>HastaKayitFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaneBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaneBilgileri.Designer.cs">
+      <DependentUpon>HastaneBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hastane_Otomasyonu_VeritabanıDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hastane_Otomasyonu_VeritabanıDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="poliklinikBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="poliklinikBilgileri.Designer.cs">
+      <DependentUpon>poliklinikBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlBaglantim.cs" />
+    <Compile Include="TedaviBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedaviBilgileri.Designer.cs">
+      <DependentUpon>TedaviBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teshisBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teshisBilgileri.Designer.cs">
+      <DependentUpon>teshisBilgileri.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DoktorBilgileri.resx">
+      <DependentUpon>DoktorBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anaSayfa.resx">
+      <DependentUpon>anaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaDüzenlemeVeArama.resx">
+      <DependentUpon>HastaDüzenlemeVeArama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaKayitFormu.resx">
+      <DependentUpon>HastaKayitFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaneBilgileri.resx">
+      <DependentUpon>HastaneBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="poliklinikBilgileri.resx">
+      <DependentUpon>poliklinikBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TedaviBilgileri.resx">
+      <DependentUpon>TedaviBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teshisBilgileri.resx">
+      <DependentUpon>teshisBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ds_HastaneOtomasyonu.xsc">
+      <DependentUpon>ds_HastaneOtomasyonu.xsd</DependentUpon>
+    </None>
+    <None Include="ds_HastaneOtomasyonu.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_HastaneOtomasyonu.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ds_HastaneOtomasyonu.xss">
+      <DependentUpon>ds_HastaneOtomasyonu.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_Otomasyonu_VeritabanıDataSet.xsc">
+      <DependentUpon>Hastane_Otomasyonu_VeritabanıDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_Otomasyonu_VeritabanıDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hastane_Otomasyonu_VeritabanıDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hastane_Otomasyonu_VeritabanıDataSet.xss">
+      <DependentUpon>Hastane_Otomasyonu_VeritabanıDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karışık.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\süs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tablo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngguru.com %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ppngguru.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngguru.com %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngguru.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reçete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pckalp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngguru.com %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reçete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backkground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searvh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueaccountdelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ek_Açıklama_2020-05-24_174853-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ek_Açıklama_2020-05-24_182535-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kaydet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çizgiiiii.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOSPİTAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logohospital.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hastanelogoyuvarlak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalp3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hastanelogoyuvarlak1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOSPİTAL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ambulanss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ambulannss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sedye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngguru.com %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalp2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3doktor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e %284%29 - Kopya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

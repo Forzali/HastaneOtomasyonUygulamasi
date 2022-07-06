@@ -1,0 +1,17 @@
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\bin\Debug\Hastane Otomasyon Uygulaması.exe.config
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\bin\Debug\Hastane Otomasyon Uygulaması.exe
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\bin\Debug\Hastane Otomasyon Uygulaması.pdb
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\obj\Debug\Hastane Otomasyon Uygulaması.csprojAssemblyReference.cache
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\obj\Debug\Hastane_Otomasyon_Uygulaması.anaSayfa.resources
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\obj\Debug\Hastane_Otomasyon_Uygulaması.Properties.Resources.resources
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\obj\Debug\Hastane Otomasyon Uygulaması.csproj.GenerateResource.cache
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\obj\Debug\Hastane Otomasyon Uygulaması.csproj.CoreCompileInputs.cache
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\obj\Debug\Hastane Otomasyon Uygulaması.exe
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\obj\Debug\Hastane Otomasyon Uygulaması.pdb
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\obj\Debug\Hastane_Otomasyon_Uygulaması.HastaKayitFormu.resources
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\obj\Debug\Hastane_Otomasyon_Uygulaması.HastaDüzenlemeVeArama.resources
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\obj\Debug\Hastane_Otomasyon_Uygulaması.teshisBilgileri.resources
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\obj\Debug\Hastane_Otomasyon_Uygulaması.poliklinikBilgileri.resources
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\obj\Debug\Hastane_Otomasyon_Uygulaması.HastaneBilgileri.resources
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\obj\Debug\Hastane_Otomasyon_Uygulaması.DoktorBilgileri.resources
+C:\Users\osmn_\Source\Repos\Hastane Otomasyon Uygulaması\Hastane Otomasyon Uygulaması\obj\Debug\Hastane_Otomasyon_Uygulaması.TedaviBilgileri.resources
